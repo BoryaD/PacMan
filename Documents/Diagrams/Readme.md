@@ -7,7 +7,7 @@
 [Диаграмма вариантов использования](https://github.com/BoryaD/PacMan/blob/master/Documents/Diagrams/UseCase.md)
 
 ### 2. Диаграмма активности<a name="2"></a>
-[Диаграммы агтивности](https://github.com/BoryaD/PacMan/blob/master/Documents/Diagrams/Activity.md)
+[Диаграммы аrтивности](https://github.com/BoryaD/PacMan/blob/master/Documents/Diagrams/Activity.md)
 
 ### 3. Диаграмма последовательности<a name="3"></a>
 [Диаграммы последовательности](https://github.com/BoryaD/PacMan/blob/master/Documents/Diagrams/Sequence.md)
