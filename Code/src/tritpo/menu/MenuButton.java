@@ -9,7 +9,7 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 import tritpo.Data;
 
-class MenuButton extends HBox {
+public class MenuButton extends HBox {
     public MenuButton(String name) {
         DropShadow shadow = new DropShadow();
         shadow.setColor(Color.BLACK);

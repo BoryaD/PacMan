@@ -4,7 +4,8 @@ import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import tritpo.*;
+import tritpo.Data;
+import tritpo.gameLogic.Maze;
 
 public class MainMenu extends Pane {
 
@@ -26,7 +27,10 @@ public class MainMenu extends Pane {
         buttonsBox.getChildren().addAll(playButton, optionsButton, aboutButton, exitButton);
 
         playButton.setOnMouseClicked((event) -> {
-
+            Maze playScreen = new Maze();
+            Data.content.getChildren().clear();
+            Data.content.getChildren().add(playScreen);
+            playScreen.requestFocus();
         });
         optionsButton.setOnMouseClicked((event) -> {
             Options optionScreen = Menu.getOptionMenu();
