@@ -43,15 +43,28 @@ public final class Data {
     public static final int HARD_GHOSTS = 4;
     public static boolean autoMod = false;
 
-
+    public static final int MOVING = 1;
+    public static final int STOPPED = 0;
+    public static final int MOVE_LEFT = 0;
+    public static final int MOVE_UP = 1;
+    public static final int MOVE_RIGHT = 2;
+    public static final int MOVE_DOWN = 3;
+    public static final int TRAPPED = 10;
+    public static final int FLASH_HOLLOW_MAX_TIME = 80;
+    public static final int HOLLOW_MAX_TIME = 80;
+    public static final double CHANGE_FACTOR = 0.75D;
+    public static final double CHANGE_FACTOR_2 = 0.5D;
+    public static final int IMAGE_OFFSET = -13;
     public static final int FONT_SIZE = 27;
+    public static final int INITIAL_PACMAN_X = 15;
+    public static final int INITIAL_PACMAN_Y = 24;
     public static final int LITTLE_DOT_RADIUS = 1;
     public static final int BIG_DOT_RADIUS = 5;
 
 
 
     public static final double TIME_OF_FADING = 3.0;
-
+    public static final int DURATION_MILLS = 45;
     public static final double START_FADE_VALUE = 0.0;
     public static final double FINAL_FADE_VALUE = 1.0;
     public static final double REFLECTION_VALUE = 1.0;
@@ -61,7 +74,7 @@ public final class Data {
     public static final double TIME_OF_INCREASING = 1.25;
     public static final double RADIUS_OF_SHADOW = 20.0;
     public static final double ANCHORE = 40.0;
-
+    public static final int START_SCORE = 500;
 
     public static final int X_PIXELS = 30;
     public static final int Y_PIXELS = 32;
@@ -153,6 +166,10 @@ public final class Data {
         if (value == 3 || value == 2) {
             ++dotTotal;
         }
+    }
+
+    public static int getDotTotal() {
+        return dotTotal;
     }
 
     public static Object getDot(int x, int y) {
