@@ -7,8 +7,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
-import tritpo.menu.MenuButton;
 import tritpo.Data;
+import tritpo.menu.MenuButton;
+
 
 public class MessageBox extends Group {
     public MessageBox(Maze maze, String messegeType) {
@@ -41,7 +42,7 @@ public class MessageBox extends Group {
             buttonsBox.setLayoutY((double)Data.calcGrid(17.5F));
             buttonsBox.setLayoutX((double)Data.calcGrid(8.7F));
             restartButton.setOnMouseClicked((event) -> {
-
+                maze.resume();
                 this.setVisible(false);
             });
             exitButton.setOnMouseClicked((event) -> {
@@ -93,7 +94,7 @@ public class MessageBox extends Group {
             buttonsBox.setLayoutX((double)Data.calcGrid(8.7F));
             restartButton.setOnMouseClicked((event) -> {
                 Data.livesCount.set(2);
-
+                maze.restart();
                 this.setVisible(false);
             });
             exitButton.setOnMouseClicked((event) -> {

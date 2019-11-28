@@ -42,9 +42,7 @@ public abstract class Moving extends Parent {
         this.timeline.setCycleCount(Timeline.INDEFINITE);
 
         KeyFrame kf = new KeyFrame(Duration.millis(Data.DURATION_MILLS), (event) ->{
-            //public void handle(ActionEvent event) {
             Moving.this.moveOneStep();
-            //}
         });
         this.timeline.getKeyFrames().add(kf);
         return this.timeline;
