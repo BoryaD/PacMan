@@ -4,4 +4,4 @@ Desktop arcade game
 ### [Requirements](/Documents/Requirements/Requirements.md)
 ### [UML Diagrams](https://github.com/BoryaD/PacMan/tree/master/Documents/Diagrams)
 ### [Code](https://github.com/BoryaD/PacMan/tree/master/Code)
-### [Test plan](https://github.com/BoryaD/PacMan/tree/master/Testing)
+### [Test plan](https://github.com/BoryaD/PacMan/blob/master/Testing/Test%20plan.md)
